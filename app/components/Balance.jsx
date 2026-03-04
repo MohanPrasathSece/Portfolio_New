@@ -95,8 +95,7 @@ const Balance = () => {
         <div className="relative w-90 md:w-[30vw]">
           <Copy>
             <h1 className="sub-headline text-center">
-              Impressive projects that showcase excellence
-              in design and development.
+              Projects that showcase my excellence in design and development.
             </h1>
           </Copy>
         </div>

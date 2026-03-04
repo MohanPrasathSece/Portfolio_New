@@ -49,8 +49,7 @@ export const LogoCarousel = ({ title = "Brands We've Empowered" }) => {
                     <div className="relative w-90 md:w-[30vw] md:mt-[14vw]">
                         <Copy>
                             <h1 className="sub-headline text-center">
-                                Strategic partnerships with brands that demand
-                                excellence in digital solutions.
+                                I work with brands that demand excellence in digital solutions.
                             </h1>
                         </Copy>
                     </div>

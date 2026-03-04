@@ -29,16 +29,8 @@ export const TechStack = () => {
 
     return (
         <section className="py-20 bg-white overflow-hidden relative">
-            <div>
-                <div className="headline">
-                    <div className="md:flex md:gap-4 lg:gap-6 xl:gap-8 md:justify-center">
-                        <h1>my</h1>
-                        <h1 className="">skills</h1>
-                    </div>
-                </div>
-            </div>
 
-            <div className="relative flex items-center justify-center min-h-[250px] md:min-h-[300px]">
+            <div className="relative flex items-center justify-center min-h-[250px] md:min-h-[300px] py-12">
                 {/* Slow Auto-Marquee Container */}
                 <motion.div
                     className="flex gap-8 md:gap-12 items-center whitespace-nowrap"
