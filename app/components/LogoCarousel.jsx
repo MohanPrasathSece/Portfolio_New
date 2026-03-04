@@ -44,7 +44,7 @@ export const LogoCarousel = ({ title = "Brands We've Empowered" }) => {
                 </div>
             </div>
 
-            <div className="md:relative md:-mt-[5vw] md:flex md:gap-5">
+            <div className="md:relative md:-mt-[5vw] md:flex md:gap-5 flex flex-col gap-4">
                 <div className="flex justify-center md:justify-end">
                     <div className="relative w-90 md:w-[30vw] md:mt-[14vw]">
                         <Copy>

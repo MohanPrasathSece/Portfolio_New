@@ -33,7 +33,7 @@ export const TechStack = () => {
             <div className="relative flex items-center justify-center min-h-[250px] md:min-h-[300px] py-12">
                 {/* Slow Auto-Marquee Container */}
                 <motion.div
-                    className="flex gap-8 md:gap-12 items-center whitespace-nowrap"
+                    className="flex gap-8 md:gap-12 items-center whitespace-nowrap tech-marquee"
                     animate={{
                         x: [0, -100 * technologies.length], // Move exactly one set of icons
                     }}

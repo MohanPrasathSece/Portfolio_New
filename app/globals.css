@@ -234,14 +234,26 @@ body{
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(0);
   }
 }
 
 .animate-scroll {
   animation: scroll 8s linear infinite;
   transform: translateX(-50%);
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .animate-scroll {
+    animation: scroll 4s linear infinite;
+  }
+  
+  /* Tech stack mobile speed */
+  .tech-marquee {
+    animation-duration: 30s !important;
+  }
 }
