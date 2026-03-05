@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const HomeMade = () => {
   const homemadeRef = useRef();
   const heroImgRef3 = useRef();
-    const isMobile = useMediaQuery({maxWidth: 768})
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   useGSAP(() => {
     const tl = gsap.timeline({
@@ -42,8 +42,8 @@ const HomeMade = () => {
       <div className="">
         <div className="headline text-center md:text-right">
           <h1>about</h1>
-          <h1 className="md:text-center md:ml-[10vw]">mohan</h1>
-          <h1 className="md:text-center md:mr-[8vw]">& work</h1>
+          <h1 className="md:text-center md:ml-[10vw]">my</h1>
+          <h1 className="md:text-center md:mr-[8vw]">work</h1>
         </div>
 
         <div className="md:relative md:-mt-[5vw] md:flex md:flex-row-reverse md:gap-5">
@@ -72,8 +72,7 @@ const HomeMade = () => {
             <div className="relative w-90 md:w-[30vw] md:mt-[14vw]">
               <Copy>
                 <h1 className="sub-headline text-center">
-                  I engineer exceptional web experiences. As the founder of
-                  Zyra Digitals, I set the standard for quality.
+                  I engineer exceptional web experiences that set the standard for quality.
                 </h1>
               </Copy>
             </div>

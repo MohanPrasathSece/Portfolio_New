@@ -6,12 +6,18 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import { TechStack } from "./components/TechStack";
 import { LogoCarousel } from "./components/LogoCarousel";
+import ScrollAnimations from "./components/ScrollAnimations";
+import Ticker from "./components/Ticker";
 
 export default function Home() {
   return (
     <main className="font-mona">
+      <ScrollAnimations />
       <Navbar />
       <Hero />
+      <div className="my-20">
+        <Ticker />
+      </div>
       <HomeMade />
       <TechStack />
       <Balance />

@@ -14,10 +14,10 @@ const Balance = () => {
   const balanceRef = useRef();
   const balImgRef = useRef();
   const balImgRef2 = useRef();
-  const isMobile = useMediaQuery({maxWidth: 768})
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
 
-    useGSAP(() => {
+  useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: balanceRef.current,
@@ -54,31 +54,37 @@ const Balance = () => {
       title: "Amzcoz",
       image: "/projects/amzcoz.png",
       codeUrl: "https://github.com/MohanPrasathSece",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.amzcoz.com/",
     },
     {
-      title: "Launch",
+      title: "Launch & Close",
       image: "/projects/launch.png",
       codeUrl: "https://github.com/MohanPrasathSece",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.launchandclose.com/",
     },
     {
       title: "Nirvana Pain Clinic",
       image: "/projects/nirvanapainclinic.png",
       codeUrl: "https://github.com/MohanPrasathSece",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.nirvanapainclinic.com/",
     },
     {
-      title: "Precision",
+      title: "Precision RCT",
       image: "/projects/precision.png",
       codeUrl: "https://github.com/MohanPrasathSece",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.precisionrct.co.uk/",
     },
     {
       title: "Xivi",
       image: "/projects/xivi.png",
       codeUrl: "https://github.com/MohanPrasathSece",
-      liveUrl: "https://example.com",
+      liveUrl: "https://www.xivi.in/",
+    },
+    {
+      title: "Vakalt",
+      image: "/projects/vakalt.png",
+      codeUrl: "https://github.com/MohanPrasathSece",
+      liveUrl: "https://vakalt-firm.vercel.app/",
     },
   ];
 
@@ -103,14 +109,14 @@ const Balance = () => {
 
       <div className="mt-16">
         <div className="relative overflow-hidden">
-          <div className="flex gap-12 animate-scroll">
+          <div className="flex gap-12 animate-projects" style={{ width: "max-content" }}>
             {[...projects, ...projects].map((project, idx) => (
               <div
                 key={`${project.title}-${idx}`}
-                className="min-w-[70vw] md:min-w-[50vw] lg:min-w-[40vw] flex-shrink-0"
+                className="min-w-[80vw] md:min-w-[50vw] lg:min-w-[38vw] flex-shrink-0"
               >
                 <div className="bg-white border-2 border-gray-200 p-8 rounded-2xl shadow-2xl">
-                  <div className="relative w-full h-96 md:h-[500px] overflow-hidden rounded-xl">
+                  <div className="relative w-full h-52 md:h-[380px] overflow-hidden rounded-xl">
                     <Image
                       src={project.image}
                       alt={project.title}

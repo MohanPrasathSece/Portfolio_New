@@ -1,39 +1,47 @@
 @import "tailwindcss";
+@import "./animations.css";
 
 @theme inline {
   --font-mona: var(--font-mona-sans);
   --font-inter: var(--font-inter-sans);
 }
 
-@layer base{
+@layer base {
   @font-face {
     font-family: "roc-Grotesk-Condensed-black";
     src: url("/fonts/Roc_Grotesk_Condensed_Black.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-bold";
     src: url("/fonts/Roc_Grotesk_Condensed_Bold.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-extra-bold";
     src: url("/fonts/Roc_Grotesk_Condensed_ExtraBold.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-extra-light";
     src: url("/fonts/Roc_Grotesk_Condensed_ExtraLight.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-heavy";
     src: url("/fonts/Roc_Grotesk_Condensed_Heavy.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-light";
     src: url("/fonts/Roc_Grotesk_Condensed_Light.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-medium";
     src: url("/fonts/Roc_Grotesk_Condensed_Medium.otf") format("opentype");
   }
+
   @font-face {
     font-family: "roc-Grotesk-Condensed-thin";
     src: url("/fonts/Roc_Grotesk_Condensed_Thin.otf") format("opentype");
@@ -42,63 +50,62 @@
   /* Playfair-Display */
   @font-face {
     font-family: "playfair-black";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-Black.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-black-italic";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-bold";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-bold-italic";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-extrabold";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-extrabold-italic";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-italic";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-medium";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-Medium.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Medium.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-medium-italic";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-regular";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-semibold";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf") format("truetype");
   }
+
   @font-face {
     font-family: "playfair-semibold-italic";
-    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf")
-      format("truetype");
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
   }
 }
 
@@ -125,7 +132,7 @@
   --font-roc-Grotesk-Condensed-thin: "roc-Grotesk-Condensed-thin", "sans-serif";
 }
 
-body{
+body {
   background: #ffffff;
   overflow-x: hidden;
 }
@@ -144,67 +151,81 @@ body{
 
 #hero_img_wrapper_1 {
   position: relative;
-  padding: 1px; /* Border width */
-  background: #222; /* Border color */
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
   clip-path: polygon(0 0, 100% 15%, 96% 100%, 0 86%);
 }
 
 .hero_img_1 {
   clip-path: polygon(0 0, 100% 0%, 96% 100%, 0 86%);
   position: relative;
-  background: white; /* Background color of your container */
+  background: white;
+  /* Background color of your container */
 }
 
 #hero_img_wrapper_2 {
   position: relative;
-  padding: 1px; /* Border width */
-  background: #222; /* Border color */
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
   clip-path: polygon(4% 5%, 100% 0%, 100% 90%, 0 100%);
 }
 
 .hero_img_2 {
   clip-path: polygon(4% 5%, 100% 0%, 100% 90%, 0 100%);
   position: relative;
-  background: white; /* Background color of your container */
+  background: white;
+  /* Background color of your container */
 }
 
 #hero_img_wrapper_3 {
   position: relative;
-  padding: 1px; /* Border width */
-  background: #222; /* Border color */
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
   clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
 }
 
 .hero_img_3 {
   clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
   position: relative;
-  background: white; /* Background color of your container */
+  background: white;
+  /* Background color of your container */
 }
 
 #bal_img_wrapper_3 {
   position: relative;
-  padding: 1px; /* Border width */
-  background: #222; /* Border color */
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
   clip-path: polygon(0 0, 98% 17%, 100% 85%, 0 100%);
 }
 
 .bal_img_3 {
   clip-path: polygon(0 0, 98% 17%, 100% 85%, 0 100%);
   position: relative;
-  background: white; /* Background color of your container */
+  background: white;
+  /* Background color of your container */
 }
 
 #bal_img_wrapper_4 {
   position: relative;
-  padding: 1px; /* Border width */
-  background: #222; /* Border color */
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
   clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0 100%);
 }
 
 .bal_img_4 {
   clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0 100%);
   position: relative;
-  background: white; 
+  background: white;
 }
 
 .headline {
@@ -221,37 +242,66 @@ body{
 
 #brand_img_wrapper_1 {
   position: relative;
-  padding: 1px; /* Border width */
-  background: #222; /* Border color */
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
   clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
 }
 
 .brand_img_1 {
   clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
   position: relative;
-  background: white; /* Background color of your container */
+  background: white;
+  /* Background color of your container */
 }
 
 @keyframes scroll {
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
 
+@keyframes scrollProjects {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .animate-scroll {
-  animation: scroll 8s linear infinite;
+  animation: scroll 20s linear infinite;
   transform: translateX(-50%);
+}
+
+.animate-projects {
+  animation: scrollProjects 6s linear infinite;
+}
+
+.company_img_1 {
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
 }
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
   .animate-scroll {
-    animation: scroll 4s linear infinite;
+    animation: scroll 10s linear infinite;
   }
-  
+
+  .animate-projects {
+    animation: scrollProjects 5s linear infinite;
+  }
+
   /* Tech stack mobile speed */
   .tech-marquee {
     animation-duration: 30s !important;

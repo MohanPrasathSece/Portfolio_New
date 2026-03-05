@@ -10,8 +10,8 @@ const Services = () => {
           <h1 className="">Good At</h1>
         </div>
 
-        <div className="flex justify-center flex-wrap gap-10 py-15">
-          <div className="flex flex-col gap-2 mb-8">
+        <div className="flex justify-center flex-wrap gap-4 md:gap-6 py-15">
+          <div className="flex flex-col gap-2 mb-8 scroll-animate scroll-animate-delay-1">
             <div className="relative w-full">
               <Copy>
                 <h1 className="service-headline text-center">Website Development</h1>
@@ -29,7 +29,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 mb-8">
+          <div className="flex flex-col gap-2 mb-8 scroll-animate scroll-animate-delay-2">
             <div className="relative w-full">
               <Copy>
                 <h1 className="service-headline text-center">WordPress Development</h1>
@@ -47,7 +47,7 @@ const Services = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 mb-8">
+          <div className="flex flex-col gap-2 mb-8 scroll-animate scroll-animate-delay-3">
             <div className="relative w-full">
               <Copy>
                 <h1 className="service-headline text-center">Poster & Graphic Design</h1>

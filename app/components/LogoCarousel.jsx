@@ -58,7 +58,7 @@ export const LogoCarousel = ({ title = "Brands We've Empowered" }) => {
                 <div className="md:w-[70vw]">
                     <div id="brand_img_wrapper_1">
                         <div className="relative brand_img_1 h-[55vw] md:h-[35vw] overflow-hidden">
-                            <div className="relative w-full h-full overflow-hidden px-12 py-12">
+                            <div className="relative w-full h-full overflow-hidden px-12 pt-6 pb-12 md:py-12">
                                 <div className="flex gap-24 items-center justify-center min-h-[400px] animate-scroll">
                                     {[...brandLogos, ...brandLogos].map((brand, index) => (
                                         <BrandLogo key={`${brand.name}-${index}`} brand={brand} />
