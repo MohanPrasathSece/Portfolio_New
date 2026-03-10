@@ -1,0 +1,318 @@
+@import "tailwindcss";
+@import "./animations.css";
+
+@theme inline {
+  --font-mona: var(--font-mona-sans);
+  --font-inter: var(--font-inter-sans);
+}
+
+@layer base {
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-black";
+    src: url("/fonts/Roc_Grotesk_Condensed_Black.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-bold";
+    src: url("/fonts/Roc_Grotesk_Condensed_Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-extra-bold";
+    src: url("/fonts/Roc_Grotesk_Condensed_ExtraBold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-extra-light";
+    src: url("/fonts/Roc_Grotesk_Condensed_ExtraLight.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-heavy";
+    src: url("/fonts/Roc_Grotesk_Condensed_Heavy.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-light";
+    src: url("/fonts/Roc_Grotesk_Condensed_Light.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-medium";
+    src: url("/fonts/Roc_Grotesk_Condensed_Medium.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: "roc-Grotesk-Condensed-thin";
+    src: url("/fonts/Roc_Grotesk_Condensed_Thin.otf") format("opentype");
+  }
+
+  /* Playfair-Display */
+  @font-face {
+    font-family: "playfair-black";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-black-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-bold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-bold-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-extrabold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-extrabold-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Italic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-medium";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Medium.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-medium-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-regular";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-semibold";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "playfair-semibold-italic";
+    src: url("/fonts/Playfair_Display/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+  }
+}
+
+@theme {
+  --font-playfair-black: "playfair-black", "sans-serif";
+  --font-playfair-black-italic: "playfair-black-italic", "sans-serif";
+  --font-playfair-bold: "playfair-bold", "sans-serif";
+  --font-playfair-bold-italic: "playfair-bold-italic", "sans-serif";
+  --font-playfair-extrabold: "playfair-extrabold", "sans-serif";
+  --font-playfair-extrabold-italic: "playfair-extrabold-italic", "sans-serif";
+  --font-playfair-italic: "playfair-italic", "sans-serif";
+  --font-playfair-medium: "playfair-medium", "sans-serif";
+  --font-playfair-regular: "playfair-regular", "sans-serif";
+  --font-playfair-semibold: "playfair-semibold", "sans-serif";
+  --font-playfair-semibold-italic: "playfair-semibold-italic", "sans-serif";
+
+  --font-roc-Grotesk-Condensed-black: "roc-Grotesk-Condensed-black", "sans-serif";
+  --font-roc-Grotesk-Condensed-bold: "roc-Grotesk-Condensed-bold", "sans-serif";
+  --font-roc-Grotesk-Condensed-extra-bold: "roc-Grotesk-Condensed-extra-bold", "sans-serif";
+  --font-roc-Grotesk-Condensed-extra-light: "roc-Grotesk-Condensed-extra-light", "sans-serif";
+  --font-roc-Grotesk-Condensed-heavy: "roc-Grotesk-Condensed-heavy", "sans-serif";
+  --font-roc-Grotesk-Condensed-light: "roc-Grotesk-Condensed-light", "sans-serif";
+  --font-roc-Grotesk-Condensed-medium: "roc-Grotesk-Condensed-medium", "sans-serif";
+  --font-roc-Grotesk-Condensed-thin: "roc-Grotesk-Condensed-thin", "sans-serif";
+}
+
+body {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav_btn {
+  @apply border font-roc-Grotesk-Condensed-bold hidden px-2 uppercase lg:block;
+}
+
+.menu_btn {
+  @apply uppercase font-roc-Grotesk-Condensed-bold border text-3xl px-2.5 py-0.5 align-middle lg:hidden;
+}
+
+#hero_img_wrapper_1 {
+  position: relative;
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
+  clip-path: polygon(0 0, 100% 15%, 96% 100%, 0 86%);
+}
+
+.hero_img_1 {
+  clip-path: polygon(0 0, 100% 0%, 96% 100%, 0 86%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
+}
+
+#hero_img_wrapper_2 {
+  position: relative;
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
+  clip-path: polygon(4% 5%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.hero_img_2 {
+  clip-path: polygon(4% 5%, 100% 0%, 100% 90%, 0 100%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
+}
+
+#hero_img_wrapper_3 {
+  position: relative;
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+}
+
+.hero_img_3 {
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
+}
+
+#bal_img_wrapper_3 {
+  position: relative;
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
+  clip-path: polygon(0 0, 98% 17%, 100% 85%, 0 100%);
+}
+
+.bal_img_3 {
+  clip-path: polygon(0 0, 98% 17%, 100% 85%, 0 100%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
+}
+
+#bal_img_wrapper_4 {
+  position: relative;
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
+  clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0 100%);
+}
+
+.bal_img_4 {
+  clip-path: polygon(0 15%, 100% 0%, 100% 90%, 0 100%);
+  position: relative;
+  background: white;
+}
+
+.headline {
+  @apply text-[19.5vw] leading-[0.8] tracking-tight font-roc-Grotesk-Condensed-bold uppercase w-full md:text-[14vw] md:leading-[0.75];
+}
+
+.sub-headline {
+  @apply font-playfair-regular text-2xl md:text-[1.3vw];
+}
+
+.service-headline {
+  @apply font-playfair-regular text-3xl md:text-[1.5vw];
+}
+
+#brand_img_wrapper_1 {
+  position: relative;
+  padding: 1px;
+  /* Border width */
+  background: #222;
+  /* Border color */
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+}
+
+.brand_img_1 {
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scrollProjects {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  animation: scroll 90s linear infinite;
+  transform: translateX(-50%);
+}
+
+.animate-brands {
+  animation: scroll 15s linear infinite;
+  transform: translateX(-50%);
+}
+
+.animate-projects {
+  animation: scrollProjects 40s linear infinite;
+}
+
+.company_img_1 {
+  clip-path: polygon(2% 17%, 100% 0, 100% 100%, 0 78%);
+  position: relative;
+  background: white;
+  /* Background color of your container */
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .animate-ticker {
+    animation: scroll 90s linear infinite;
+  }
+
+  .animate-brands {
+    animation: scroll 10s linear infinite;
+  }
+
+  .animate-projects {
+    animation: scrollProjects 20s linear infinite;
+  }
+
+  /* Tech stack mobile speed */
+  .tech-marquee {
+    animation-duration: 30s !important;
+  }
+}
