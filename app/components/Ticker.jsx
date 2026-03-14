@@ -18,8 +18,7 @@ const Ticker = () => {
         "FIGMA",
         "TYPESCRIPT",
         "MYSQL",
-        "GIT",
-        "DOCKER"
+        "GIT"
     ];
 
     const skillsText = skills.join(" • ") + " • ";
