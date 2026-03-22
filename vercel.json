@@ -1,23 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/www/:path*",
-      "destination": "https://mohanprasath.in/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path+/",
-      "destination": "/:path+",
-      "permanent": true
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
