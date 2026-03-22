@@ -92,17 +92,17 @@ const Balance = () => {
     <div ref={balanceRef} className="py-10 px-4 overflow-hidden">
       <div>
         <div className="headline">
-          <h1 className="md:text-right">my</h1>
-          <h1 className="text-center">projects</h1>
+          <h2 className="md:text-right">my</h2>
+          <h2 className="text-center">projects</h2>
         </div>
       </div>
 
       <div className="flex justify-center md:justify-start">
         <div className="relative w-90 md:w-[30vw]">
           <Copy>
-            <h1 className="sub-headline text-center">
-              Projects that showcase my excellence in design and development.
-            </h1>
+            <p className="sub-headline text-center">
+              A curated selection of high-performance web applications and digital solutions that showcase my expertise in modern development.
+            </p>
           </Copy>
         </div>
       </div>
@@ -119,22 +119,22 @@ const Balance = () => {
                   <div className="relative w-full h-52 md:h-[380px] overflow-hidden rounded-xl">
                     <Image
                       src={project.image}
-                      alt={project.title}
+                      alt={`Mohan Prasath Portfolio Project - ${project.title} | Modern Web Experience`}
                       className="object-cover object-center"
                       fill
                     />
                   </div>
 
                   <div className="mt-8">
-                    <div className="font-roc-Grotesk-Condensed-bold uppercase text-4xl md:text-5xl">
+                    <h3 className="font-roc-Grotesk-Condensed-bold uppercase text-4xl md:text-5xl">
                       {project.title}
-                    </div>
+                    </h3>
                     <div className="mt-6 flex gap-6 [&_a]:bg-white [&_a]:border-2 [&_a]:border-gray-800 [&_a]:uppercase [&_a]:font-roc-Grotesk-Condensed-bold [&_a]:px-8 [&_a]:py-4 [&_a]:text-xl [&_a]:hover:bg-gray-800 [&_a]:hover:text-white [&_a]:transition-all">
                       <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                        code
+                        source code
                       </a>
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        live
+                        live site
                       </a>
                     </div>
                   </div>

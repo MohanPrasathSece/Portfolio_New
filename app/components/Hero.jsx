@@ -42,7 +42,7 @@ const Hero = () => {
     <div ref={heroRef} className="w-full px-4">
       <div className="pt-40 md:pt-30 lg:pt-45">
         <div className="headline text-right">
-          <h1>Hello, I’m</h1>
+          <span>Hello, I&apos;m</span>
           <h1 className="md:text-left">Mohan.</h1>
         </div>
       </div>
@@ -54,10 +54,11 @@ const Hero = () => {
               <motion.div initial={{opacity: 0}} animate={{opacity:1}} transition={{ duration: 0.8, ease: [0.83, 0, 0.17, 1] }} ref={heroImgRef1} className="relative w-full h-full">
                 <Image
                   src={"/newpfp.jpeg"}
-                  alt="Mohan Prasath"
+                  alt="Mohan Prasath - Full Stack Web Developer & Digital Creator"
                   className="object-cover object-top scale-90 md:scale-85"
                   style={{ objectPosition: 'top 0%' }}
                   fill
+                  priority
                 />
               </motion.div>
             </div>
@@ -68,10 +69,9 @@ const Hero = () => {
       <div className="flex justify-center md:justify-start px-4">
         <div className="relative w-90 md:w-[30vw]">
           <Copy>
-            <h1 className="sub-headline">
-              I create modern web experiences. Performance, clarity,
-              and clean UI aren't just goals—they're standards.
-            </h1>
+            <h2 className="sub-headline text-xl md:text-2xl font-mona font-medium leading-relaxed">
+              I am a results-driven Full Stack Developer creating high-performance, modern web experiences with clean UI and excellence in code architecture.
+            </h2>
           </Copy>
         </div>
       </div>

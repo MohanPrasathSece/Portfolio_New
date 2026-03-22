@@ -34,12 +34,12 @@ export const LogoCarousel = ({ title = "Brands We've Empowered" }) => {
             <div>
                 <div className="headline">
                     <div className="md:flex md:gap-4 lg:gap-6 xl:gap-8 md:justify-end">
-                        <h1>brands</h1>
-                        <h1 className="">we've</h1>
+                        <h2>brands</h2>
+                        <h2 className="">we've</h2>
                     </div>
                     <div className="md:flex">
-                        <h1>empowered</h1>
-                        <h1 className="text-right"></h1>
+                        <h2>empowered</h2>
+                        <h2 className="text-right"></h2>
                     </div>
                 </div>
             </div>
@@ -48,9 +48,9 @@ export const LogoCarousel = ({ title = "Brands We've Empowered" }) => {
                 <div className="flex justify-center md:justify-end">
                     <div className="relative w-90 md:w-[30vw] md:mt-[14vw]">
                         <Copy>
-                            <h1 className="sub-headline text-center">
-                                I work with brands that demand excellence in digital solutions.
-                            </h1>
+                            <p className="sub-headline text-center">
+                                Mohan Prasath collaborates with brands that demand excellence in digital design and high-performance web development.
+                            </p>
                         </Copy>
                     </div>
                 </div>
@@ -78,7 +78,7 @@ const BrandLogo = ({ brand }) => {
         <div className="flex items-center justify-center transition-all duration-300 hover:scale-110">
             <img
                 src={brand.src}
-                alt={brand.name}
+                alt={`${brand.name} — Brand Empowered by Mohan Prasath, Full Stack Developer`}
                 className="h-28 md:h-40 w-auto object-contain max-w-[200px] md:max-w-[300px]"
                 title={brand.name}
                 loading="lazy"

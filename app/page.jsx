@@ -14,17 +14,28 @@ export default function Home() {
     <main className="font-mona">
       <ScrollAnimations />
       <Navbar />
-      <Hero />
+      <section id="hero" aria-label="Mohan Prasath - Hero Introduction">
+        <Hero />
+      </section>
       <div className="my-20">
         <Ticker />
       </div>
-      <HomeMade />
-      <TechStack />
-      <Balance />
-      <Services />
-      <LogoCarousel />
+      <section id="about" aria-label="About Mohan Prasath's Work">
+        <HomeMade />
+      </section>
+      <section id="skills" aria-label="Mohan Prasath Tech Stack and Skills">
+        <TechStack />
+      </section>
+      <section id="projects" aria-label="Mohan Prasath Portfolio Projects">
+        <Balance />
+      </section>
+      <section id="services" aria-label="Services offered by Mohan Prasath">
+        <Services />
+      </section>
+      <section id="brands" aria-label="Brands empowered by Mohan Prasath">
+        <LogoCarousel />
+      </section>
       <Footer />
-      {/* <div className="h-dvh"></div> */}
     </main>
   );
 }

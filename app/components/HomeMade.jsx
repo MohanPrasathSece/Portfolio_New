@@ -41,9 +41,9 @@ const HomeMade = () => {
     <div ref={homemadeRef} className="py-10 px-4">
       <div className="">
         <div className="headline text-center md:text-right">
-          <h1>about</h1>
-          <h1 className="md:text-center md:ml-[10vw]">my</h1>
-          <h1 className="md:text-center md:mr-[8vw]">work</h1>
+          <h2 className="">about</h2>
+          <h2 className="md:text-center md:ml-[10vw]">my</h2>
+          <h2 className="md:text-center md:mr-[8vw]">work</h2>
         </div>
 
         <div className="md:relative md:-mt-[5vw] md:flex md:flex-row-reverse md:gap-5">
@@ -59,7 +59,7 @@ const HomeMade = () => {
                 >
                   <Image
                     src={"/header-img-3.avif"}
-                    alt="header image"
+                    alt="Mohan Prasath - Showcasing Full Stack Development Expertise and Creative Digital Solutions"
                     className="object-cover object-top scale-110 md:scale-125 md:-rotate-12"
                     fill
                   />
@@ -71,9 +71,9 @@ const HomeMade = () => {
           <div className="flex justify-center md:justify-start">
             <div className="relative w-90 md:w-[30vw] md:mt-[14vw]">
               <Copy>
-                <h1 className="sub-headline text-center">
-                  I engineer exceptional web experiences that set the standard for quality.
-                </h1>
+                <p className="sub-headline text-center">
+                  As a dedicated Full Stack Developer, Mohan Prasath engineers exceptional web experiences that set the standard for performance, clarity, and quality in modern digital products.
+                </p>
               </Copy>
             </div>
           </div>
